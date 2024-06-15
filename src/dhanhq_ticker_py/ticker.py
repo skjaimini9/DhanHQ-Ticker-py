@@ -982,6 +982,10 @@ class DhanTicker:
             user_agent_header=self.USER_AGENT,
             open_timeout=self.CONNECT_TIMEOUT,
             ping_interval=self.PING_INTERVAL,
+            max_size=83886080,
+            max_queue=96,
+            read_limit=6553600,
+            write_limit=6553600,
             ping_timeout=None,
             close_timeout=self.CLOSE_TIMEOUT,
         )
